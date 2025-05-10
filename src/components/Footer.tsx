@@ -25,14 +25,14 @@ const Footer = () => {
           </div>
           
           <div>
-            <h3 className="text-xl font-bold mb-4">Produtos</h3>
+            <h3 className="text-xl font-bold mb-4">Nossos Serviços</h3>
             <ul className="space-y-2 text-gray-300">
-              <li><a href="#produtos" className="hover:text-primary transition-colors">Protetores de Colchão</a></li>
-              <li><a href="#produtos" className="hover:text-primary transition-colors">Capas para Travesseiros</a></li>
-              <li><a href="#produtos" className="hover:text-primary transition-colors">Kits Antialérgicos</a></li>
-              <li><a href="#produtos" className="hover:text-primary transition-colors">Produtos Impermeáveis</a></li>
-              <li><a href="#produtos" className="hover:text-primary transition-colors">Produtos Personalizados</a></li>
-              <li><a href="#produtos" className="hover:text-primary transition-colors">Acessórios Antialérgicos</a></li>
+              <li><a href="#serviços" className="hover:text-primary transition-colors">Produtos Antialérgicos</a></li>
+              <li><a href="#serviços" className="hover:text-primary transition-colors">Soluções para Alérgicos</a></li>
+              <li><a href="#serviços" className="hover:text-primary transition-colors">Produtos Impermeáveis</a></li>
+              <li><a href="#serviços" className="hover:text-primary transition-colors">Atendimento Personalizado</a></li>
+              <li><a href="#serviços" className="hover:text-primary transition-colors">Entrega para Todo Brasil</a></li>
+              <li><a href="#serviços" className="hover:text-primary transition-colors">Qualidade Comprovada</a></li>
             </ul>
           </div>
           
@@ -58,7 +58,6 @@ const Footer = () => {
                 </a>
               </li>
               <li><a href="#inicio" className="hover:text-primary transition-colors">Sobre Nós</a></li>
-              <li><a href="#produtos" className="hover:text-primary transition-colors">Produtos</a></li>
               <li><a href="#contato" className="hover:text-primary transition-colors">Contato</a></li>
             </ul>
           </div>
