@@ -1,49 +1,49 @@
 
-import { Calculator, BarChart3, FileText, Users, PieChart, Building } from 'lucide-react';
+import { Shield, PlusSquare, Droplets, UserCheck, Truck, BarChart3 } from 'lucide-react';
 import ServiceCard from './ServiceCard';
 import AnimatedSection from './AnimatedSection';
 
 const ServicesSection = () => {
   const services = [
     {
-      icon: Calculator,
-      title: 'Contabilidade',
-      description: 'Serviços completos de contabilidade para empresas de todos os portes, com demonstrativos claros e precisos.'
+      icon: Shield,
+      title: 'Produtos Antialérgicos',
+      description: 'Linha completa de produtos antialérgicos para proteção contra ácaros, fungos, bactérias e outros alérgenos.'
+    },
+    {
+      icon: PlusSquare,
+      title: 'Soluções para Alérgicos',
+      description: 'Soluções especializadas para pessoas com alergias respiratórias, rinite, asma e sensibilidades diversas.'
+    },
+    {
+      icon: Droplets,
+      title: 'Produtos Impermeáveis',
+      description: 'Capas e protetores impermeáveis que previnem o acúmulo de umidade e proliferação de microorganismos.'
+    },
+    {
+      icon: UserCheck,
+      title: 'Atendimento Personalizado',
+      description: 'Consulta especializada para entender suas necessidades e oferecer os produtos mais adequados ao seu caso.'
+    },
+    {
+      icon: Truck,
+      title: 'Entrega para Todo Brasil',
+      description: 'Enviamos nossos produtos para todos os estados brasileiros, com agilidade e segurança.'
     },
     {
       icon: BarChart3,
-      title: 'Fiscal',
-      description: 'Gerenciamento de obrigações fiscais, apuração de impostos e planejamento tributário para otimizar a carga fiscal.'
-    },
-    {
-      icon: FileText,
-      title: 'Departamento Pessoal',
-      description: 'Gestão completa da folha de pagamento, admissões, demissões e todas as rotinas trabalhistas.'
-    },
-    {
-      icon: Building,
-      title: 'Abertura de Empresa',
-      description: 'Auxílio completo na abertura, alteração ou encerramento de empresas, com agilidade e segurança.'
-    },
-    {
-      icon: PieChart,
-      title: 'Consultoria Empresarial',
-      description: 'Análise financeira, planejamento estratégico e apoio na tomada de decisões para o crescimento do seu negócio.'
-    },
-    {
-      icon: Users,
-      title: 'Societário',
-      description: 'Elaboração e alteração de contratos sociais, atas e documentos societários conforme a legislação vigente.'
+      title: 'Qualidade Comprovada',
+      description: '21 anos de experiência no mercado, com produtos testados e aprovados por milhares de clientes.'
     }
   ];
 
   return (
-    <section id="serviços" className="py-24 bg-gradient-to-b from-blue-50 to-white">
+    <section id="serviços" className="py-24 bg-gradient-to-b from-secondary/20 to-white">
       <div className="section-container">
         <AnimatedSection>
           <h2 className="section-title">Nossos Serviços</h2>
           <p className="section-subtitle">
-            Oferecemos soluções completas para atender todas as necessidades da sua empresa
+            Produtos especializados para o bem estar de pessoas alérgicas há mais de 21 anos no mercado
           </p>
         </AnimatedSection>
 

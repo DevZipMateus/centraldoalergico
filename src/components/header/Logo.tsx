@@ -8,15 +8,14 @@ interface LogoProps {
 const Logo = ({ scrolled }: LogoProps) => {
   return (
     <a href="#" className="flex items-center z-10 relative">
-      <div
+      <img 
+        src="/lovable-uploads/13d60eef-26ba-4097-9445-5ec6b6a03e6c.png"
+        alt="Central do Alérgico - Saúde e Conforto"
         className={cn(
-          "text-3xl font-bold transition-all duration-300",
-          scrolled ? "text-primary" : "text-primary",
-          "hover:scale-105"
+          "h-10 md:h-12 transition-all duration-300",
+          scrolled ? "opacity-100" : "opacity-100"
         )}
-      >
-        Contabilify
-      </div>
+      />
     </a>
   );
 };

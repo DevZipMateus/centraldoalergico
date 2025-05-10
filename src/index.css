@@ -16,17 +16,18 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    /* Primary color (60%) */
-    --primary: 215 60% 45%;
+    /* Paleta de cores da Central do Alérgico */
+    /* Verde Menta */
+    --primary: 113 100% 77%;
     --primary-foreground: 210 40% 98%;
 
-    /* Secondary color (30%) */
-    --secondary: 200 30% 80%;
+    /* Turquesa */
+    --secondary: 186 74% 50%;
     --secondary-foreground: 222.2 47.4% 11.2%;
 
-    /* Accent color (10%) */
-    --accent: 25 100% 55%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Azul Marinho */
+    --accent: 228 40% 25%;
+    --accent-foreground: 210 40% 98%;
 
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
@@ -91,11 +92,11 @@
   }
 
   .btn-primary {
-    @apply px-6 py-3 bg-primary text-white rounded-md font-medium transition-all duration-200 hover:bg-primary/90 hover:shadow-lg hover:-translate-y-0.5 active:translate-y-0 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:ring-offset-2;
+    @apply px-6 py-3 bg-primary text-accent rounded-md font-medium transition-all duration-200 hover:bg-primary/90 hover:shadow-lg hover:-translate-y-0.5 active:translate-y-0 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:ring-offset-2;
   }
 
   .btn-secondary {
-    @apply px-6 py-3 bg-white text-primary rounded-md font-medium transition-all duration-200 hover:bg-gray-50 border border-gray-200 shadow-sm hover:shadow-md hover:-translate-y-0.5 active:translate-y-0 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:ring-offset-2;
+    @apply px-6 py-3 bg-white text-accent rounded-md font-medium transition-all duration-200 hover:bg-gray-50 border border-gray-200 shadow-sm hover:shadow-md hover:-translate-y-0.5 active:translate-y-0 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:ring-offset-2;
   }
 
   .btn-accent {
@@ -111,5 +112,10 @@
   .is-visible {
     opacity: 1;
     transform: translateY(0);
+  }
+  
+  /* WhatsApp floating button */
+  .whatsapp-button {
+    @apply fixed bottom-6 right-6 z-50 bg-green-500 text-white rounded-full p-4 shadow-lg hover:bg-green-600 transition-all duration-200 hover:scale-110;
   }
 }
