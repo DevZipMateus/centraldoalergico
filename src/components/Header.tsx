@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from 'react';
 import { cn } from "@/lib/utils";
 import { useIsMobile } from '@/hooks/use-mobile';
@@ -62,6 +63,7 @@ const Header = () => {
     { name: 'Início', href: '#início' },
     { name: 'Sobre Nós', href: '#sobre-nós' },
     { name: 'Serviços', href: '#serviços' },
+    { name: 'Produtos', href: '#produtos' },
     { name: 'Contato', href: '#contato' }
   ];
 
