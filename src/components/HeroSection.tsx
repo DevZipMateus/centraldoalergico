@@ -63,7 +63,7 @@ const HeroSection = () => {
               <div className="absolute -bottom-6 -right-6 w-48 h-48 bg-primary/20 rounded-full filter blur-xl"></div>
               <div className="relative z-10 bg-white/80 backdrop-blur-sm shadow-xl rounded-2xl p-1 transform transition-all duration-500 hover:scale-[1.01] hover:shadow-2xl">
                 <img 
-                  src="https://images.unsplash.com/photo-1615729947596-a598e5de0ab3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&q=80" 
+                  src="https://images.unsplash.com/photo-1547104442-d652d8fc6ef2?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
                   alt="Proteção e conforto para pessoas alérgicas" 
                   className="rounded-2xl w-full h-auto object-cover"
                 />
