@@ -1,13 +1,7 @@
-
 import { ChevronRight } from 'lucide-react';
 import AnimatedSection from './AnimatedSection';
-
 const HeroSection = () => {
-  return (
-    <section 
-      id="início" 
-      className="relative min-h-screen flex items-start pt-24 md:pt-16 md:items-center bg-gradient-to-r from-blue-50 to-slate-50 overflow-hidden"
-    >
+  return <section id="início" className="relative min-h-screen flex items-start pt-24 md:pt-16 md:items-center bg-gradient-to-r from-blue-50 to-slate-50 overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute inset-y-0 right-0 w-1/2 bg-primary/5 skew-x-12 transform origin-bottom"></div>
@@ -62,11 +56,7 @@ const HeroSection = () => {
               <div className="absolute -top-12 -left-8 w-64 h-64 bg-secondary/10 rounded-full filter blur-xl"></div>
               <div className="absolute -bottom-6 -right-6 w-48 h-48 bg-primary/20 rounded-full filter blur-xl"></div>
               <div className="relative z-10 bg-white/80 backdrop-blur-sm shadow-xl rounded-2xl p-1 transform transition-all duration-500 hover:scale-[1.01] hover:shadow-2xl">
-                <img 
-                  src="https://images.unsplash.com/photo-1547104442-d652d8fc6ef2?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
-                  alt="Proteção e conforto para pessoas alérgicas" 
-                  className="rounded-2xl w-full h-auto object-cover"
-                />
+                <img alt="Proteção e conforto para pessoas alérgicas" className="rounded-2xl w-full h-auto object-cover" src="/lovable-uploads/989f9e01-f90f-4609-a134-abde9514eef6.png" />
               </div>
             </div>
           </AnimatedSection>
@@ -74,8 +64,6 @@ const HeroSection = () => {
       </div>
       
       <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-background to-transparent"></div>
-    </section>
-  );
+    </section>;
 };
-
 export default HeroSection;
