@@ -8,8 +8,9 @@ import {
   CarouselNext,
   CarouselPrevious
 } from '@/components/ui/carousel';
-import { GalleryHorizontal, Bed, Box, Shield, Hospital, Droplet, Layers, Square, List } from 'lucide-react';
+import { GalleryHorizontal, Bed, Box, Shield, Hospital, Droplet, Layers, Square, List, ChevronLeft, ChevronRight } from 'lucide-react';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { useIsMobile } from '@/hooks/use-mobile';
 
 // Define product interface
 interface Product {
@@ -29,7 +30,9 @@ interface Category {
 
 const ProductsSection = () => {
   const [expandedImage, setExpandedImage] = useState<string | null>(null);
+  const [expandedIndex, setExpandedIndex] = useState<number>(0);
   const [activeCategory, setActiveCategory] = useState("all");
+  const isMobile = useIsMobile();
 
   // Define categories
   const categories: Category[] = [
@@ -195,12 +198,34 @@ const ProductsSection = () => {
 
   const closeImageModal = () => {
     setExpandedImage(null);
+    setExpandedIndex(0);
     document.body.style.overflow = 'auto';
   };
 
   const openImageModal = (imageUrl: string) => {
+    const index = filteredProducts.findIndex(product => product.image === imageUrl);
+    setExpandedIndex(index >= 0 ? index : 0);
     setExpandedImage(imageUrl);
     document.body.style.overflow = 'hidden';
+  };
+
+  // Navigation functions for the expanded image modal
+  const showPreviousImage = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    if (filteredProducts.length <= 1) return;
+    
+    const newIndex = expandedIndex > 0 ? expandedIndex - 1 : filteredProducts.length - 1;
+    setExpandedIndex(newIndex);
+    setExpandedImage(filteredProducts[newIndex].image);
+  };
+
+  const showNextImage = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    if (filteredProducts.length <= 1) return;
+    
+    const newIndex = (expandedIndex + 1) % filteredProducts.length;
+    setExpandedIndex(newIndex);
+    setExpandedImage(filteredProducts[newIndex].image);
   };
 
   // Filter products based on active category
@@ -332,7 +357,7 @@ const ProductsSection = () => {
           </Tabs>
         </div>
 
-        {/* Image Modal */}
+        {/* Image Modal with Navigation Controls */}
         {expandedImage && (
           <div 
             className="fixed inset-0 z-50 bg-black/80 flex items-center justify-center p-4"
@@ -348,11 +373,50 @@ const ProductsSection = () => {
               >
                 Fechar
               </button>
-              <img 
-                src={expandedImage} 
-                alt="Imagem ampliada" 
-                className="w-full h-auto max-h-[90vh] object-contain rounded-lg"
-              />
+              
+              {/* Navigation arrows */}
+              {filteredProducts.length > 1 && (
+                <>
+                  <button 
+                    onClick={showPreviousImage}
+                    className="absolute left-0 top-1/2 -translate-y-1/2 bg-black/30 hover:bg-black/60 p-2 rounded-r-lg text-white z-10"
+                    aria-label="Imagem anterior"
+                  >
+                    <ChevronLeft className="h-8 w-8" />
+                  </button>
+                  
+                  <button 
+                    onClick={showNextImage}
+                    className="absolute right-0 top-1/2 -translate-y-1/2 bg-black/30 hover:bg-black/60 p-2 rounded-l-lg text-white z-10"
+                    aria-label="Próxima imagem"
+                  >
+                    <ChevronRight className="h-8 w-8" />
+                  </button>
+                </>
+              )}
+              
+              <div className="w-full h-full flex items-center justify-center">
+                <img 
+                  src={expandedImage} 
+                  alt={filteredProducts[expandedIndex]?.name || "Imagem ampliada"} 
+                  className="w-full h-auto max-h-[90vh] object-contain rounded-lg"
+                />
+              </div>
+              
+              {/* Product information */}
+              {filteredProducts[expandedIndex] && (
+                <div className="absolute bottom-0 left-0 right-0 bg-black/60 p-4 text-white rounded-b-lg">
+                  <h3 className="font-semibold text-lg">{filteredProducts[expandedIndex].name}</h3>
+                  {filteredProducts[expandedIndex].description && (
+                    <p className="text-sm text-gray-200">{filteredProducts[expandedIndex].description}</p>
+                  )}
+                </div>
+              )}
+              
+              {/* Image counter */}
+              <div className="absolute top-2 left-2 bg-black/60 px-3 py-1 rounded-full text-white text-sm">
+                {expandedIndex + 1} / {filteredProducts.length}
+              </div>
             </div>
           </div>
         )}
