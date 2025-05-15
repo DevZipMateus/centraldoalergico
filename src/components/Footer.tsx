@@ -1,5 +1,5 @@
 
-import { Facebook, Instagram, Calendar, FileText, Shield, Phone, Mail, MapPin } from 'lucide-react';
+import { Facebook, Instagram, Calendar, FileText, Shield, Phone, Mail, MapPin, Clock } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -52,7 +52,7 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="https://wa.me/5519996467776" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors flex items-center">
+                <a href="https://wa.me/5519984575795" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors flex items-center">
                   <Calendar className="h-4 w-4 mr-2" />
                   Agendar Consulta
                 </a>
@@ -70,7 +70,7 @@ const Footer = () => {
                   <Phone className="h-3 w-3" />
                 </div>
                 <div>
-                  <p>(19) 99646-7776</p>
+                  <p>(19) 98457-5795</p>
                 </div>
               </li>
               <li className="flex items-start">
@@ -88,6 +88,15 @@ const Footer = () => {
                 <div>
                   <p>Av Interdistrital Comendador Emilio Romi, 85</p>
                   <p>Santa Bárbara D'Oeste - SP, 13456-120</p>
+                </div>
+              </li>
+              <li className="flex items-start">
+                <div className="w-5 h-5 mt-1 mr-3 rounded-full bg-gray-800 flex items-center justify-center flex-shrink-0">
+                  <Clock className="h-3 w-3" />
+                </div>
+                <div>
+                  <p>Segunda a Quinta: 08h às 17h</p>
+                  <p>Sexta-feira: 08h às 16h</p>
                 </div>
               </li>
             </ul>

@@ -1,5 +1,5 @@
 
-import { Mail, Phone, MapPin } from 'lucide-react';
+import { Mail, Phone, MapPin, Clock } from 'lucide-react';
 import AnimatedSection from './AnimatedSection';
 import { cn } from '@/lib/utils';
 
@@ -19,15 +19,15 @@ const ContactSection = () => {
             <div className="glass-card rounded-xl p-6 sm:p-8 border-secondary/20">
               <h3 className="text-xl sm:text-2xl font-bold mb-6 text-primary">Informações de Contato</h3>
               
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {/* Telefone */}
                 <div className="flex items-start">
                   <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 mt-1">
                     <Phone className="h-5 w-5 text-primary" />
                   </div>
                   <div className="ml-3">
-                    <h4 className="text-base font-medium">Telefone</h4>
-                    <p className="text-sm text-gray-600">(19) 99646-7776</p>
+                    <h4 className="text-base font-medium">Celular/Whatsapp</h4>
+                    <p className="text-sm text-gray-600">(19) 98457-5795</p>
                   </div>
                 </div>
                 
@@ -51,6 +51,18 @@ const ContactSection = () => {
                     <h4 className="text-base font-medium">Endereço</h4>
                     <p className="text-sm text-gray-600">Av Interdistrital Comendador Emilio Romi, 85</p>
                     <p className="text-sm text-gray-600">Santa Bárbara D'Oeste - SP, 13456-120</p>
+                  </div>
+                </div>
+
+                {/* Horário de Atendimento */}
+                <div className="flex items-start">
+                  <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 mt-1">
+                    <Clock className="h-5 w-5 text-primary" />
+                  </div>
+                  <div className="ml-3">
+                    <h4 className="text-base font-medium">Horário de Atendimento</h4>
+                    <p className="text-sm text-gray-600">Segunda a Quinta: 08h às 17h</p>
+                    <p className="text-sm text-gray-600">Sexta-feira: 08h às 16h</p>
                   </div>
                 </div>
               </div>
@@ -89,7 +101,7 @@ const ContactSection = () => {
       
       {/* WhatsApp Button */}
       <a 
-        href="https://wa.me/5519996467776" 
+        href="https://wa.me/5519984575795" 
         target="_blank" 
         rel="noopener noreferrer" 
         className="whatsapp-button"

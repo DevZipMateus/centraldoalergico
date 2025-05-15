@@ -1,5 +1,5 @@
 
-import { X } from "lucide-react";
+import { X, Clock } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { MenuItem } from "./types";
 
@@ -51,12 +51,21 @@ const MobileMenuPanel = ({ isMenuOpen, onClose, menuItems }: MobileMenuPanelProp
         <div className="mt-12 pt-8 border-t border-gray-100">
           <p className="text-md text-gray-500 mb-3">Entre em contato conosco</p>
           <a 
-            href="tel:+5519996467776" 
+            href="tel:+5519984575795" 
             className="text-xl text-primary hover:text-primary/80 font-medium block py-2
                        transition-all duration-200 hover:translate-x-1 hover:scale-[1.02]"
           >
-            (19) 99646-7776
+            (19) 98457-5795
           </a>
+          
+          {/* Business Hours */}
+          <div className="mt-4 flex items-start">
+            <Clock className="h-4 w-4 text-primary mt-1 mr-2" />
+            <div>
+              <p className="text-sm text-gray-500">Segunda a Quinta: 08h às 17h</p>
+              <p className="text-sm text-gray-500">Sexta-feira: 08h às 16h</p>
+            </div>
+          </div>
         </div>
       </nav>
     </div>
