@@ -57,14 +57,14 @@ const ProductsSection = () => {
       name: "Capa de Travesseiro com Zíper",
       image: "/lovable-uploads/1746736711682_ziper capa travesseiro.jpg",
       description: "Proteção completa com fechamento em zíper",
-      category: "travesseiros"
+      category: "all"
     },
     {
       id: 2,
       name: "Travesseiro Antialérgico",
       image: "/lovable-uploads/1746736710856_Travesseiro com a capa.png",
       description: "Conforto e proteção para noites tranquilas",
-      category: "travesseiros"
+      category: "all"
     },
     {
       id: 3,
@@ -75,10 +75,10 @@ const ProductsSection = () => {
     },
     {
       id: 4,
-      name: "Protetor de Colchão",
+      name: "Travesseiros Antiácaro Allergic Cover ",
       image: "/lovable-uploads/1746736708851__MGL7474.jpeg",
       description: "Proteção completa contra ácaros",
-      category: "protetor-matelasse"
+      category: "allergic-cover"
     },
     {
       id: 5,
@@ -99,7 +99,7 @@ const ProductsSection = () => {
       name: "Linha Institucional",
       image: "/lovable-uploads/1746736704693_institucional.png",
       description: "Soluções para hotéis e hospitais",
-      category: "napa-hospitalar"
+      category: "all"
     },
     {
       id: 8,
