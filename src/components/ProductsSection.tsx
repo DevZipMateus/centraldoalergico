@@ -137,7 +137,7 @@ const ProductsSection = () => {
       description: "Brinde exclusivo para nossos clientes",
       category: "allergic-cover"
     },
-    // Novos produtos adicionados
+    // Produtos adicionados anteriormente
     {
       id: 13,
       name: "Allergic Free Mix",
@@ -193,6 +193,28 @@ const ProductsSection = () => {
       image: "/lovable-uploads/100 PVC QUEEN.png",
       description: "Proteção impermeável para colchão queen",
       category: "pvc-dry"
+    },
+    // Novas imagens adicionadas
+    {
+      id: 21,
+      name: "Cobreleito Luxo",
+      image: "/lovable-uploads/cobreleito.jpeg",
+      description: "Elegância e proteção para sua cama",
+      category: "cobreleito"
+    },
+    {
+      id: 22,
+      name: "Matelassê Queen",
+      image: "/lovable-uploads/matelassequeen.png",
+      description: "Protetor de colchão para cama queen size",
+      category: "protetor-matelasse"
+    },
+    {
+      id: 23,
+      name: "Napa Hospitalar Premium",
+      image: "/lovable-uploads/napa hospitalar nova.png",
+      description: "Proteção especializada para ambientes hospitalares",
+      category: "napa-hospitalar"
     }
   ];
 
