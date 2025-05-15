@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import AnimatedSection from './AnimatedSection';
 import { 
@@ -215,6 +214,28 @@ const ProductsSection = () => {
       image: "/lovable-uploads/napa hospitalar nova.png",
       description: "Proteção especializada para ambientes hospitalares",
       category: "napa-hospitalar"
+    },
+    // New Travesseiro products
+    {
+      id: 24,
+      name: "Travesseiro Bambu Top",
+      image: "/lovable-uploads/BAMBU TOP.jpg",
+      description: "Conforto premium com tecido de bambu",
+      category: "travesseiros"
+    },
+    {
+      id: 25,
+      name: "Travesseiro Feel Good",
+      image: "/lovable-uploads/FEEL GOOD.jpg",
+      description: "Sensação de bem-estar e sono profundo",
+      category: "travesseiros"
+    },
+    {
+      id: 26,
+      name: "Travesseiro Percal Plus",
+      image: "/lovable-uploads/PERCAL PLUS.jpg",
+      description: "Acabamento em percal de alta qualidade",
+      category: "travesseiros"
     }
   ];
 
