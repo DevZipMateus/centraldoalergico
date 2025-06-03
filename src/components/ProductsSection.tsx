@@ -136,7 +136,7 @@ const ProductsSection = () => {
     },
     {
       id: 18,
-      name: "Jogo de Lençol Azul",
+      name: "Jogo de Lençol",
       image: "/lovable-uploads/JOGO LENCOL AZUL.jpeg",
       description: "Conjunto completo de lençóis antiácaro",
       category: "jogos-lencol"
@@ -150,7 +150,7 @@ const ProductsSection = () => {
     },
     {
       id: 20,
-      name: "100% PVC Queen",
+      name: "100% PVC",
       image: "/lovable-uploads/100 PVC QUEEN.png",
       description: "Proteção impermeável para colchão queen",
       category: "pvc-dry"
@@ -165,7 +165,7 @@ const ProductsSection = () => {
     },
     {
       id: 22,
-      name: "Matelassê Queen",
+      name: "Linha Matêlasse",
       image: "/lovable-uploads/matelassequeen.png",
       description: "Protetor de colchão para cama queen size",
       category: "protetor-matelasse"
