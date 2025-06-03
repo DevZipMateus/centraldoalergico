@@ -90,30 +90,10 @@ const ProductsSection = () => {
       description: "Compre online com facilidade",
       category: "all"
     },
-    {
-      id: 9,
-      name: "Allergic Free King com Zíper",
-      image: "/lovable-uploads/1746736693126_allergic free king ziper.jpg",
-      description: "Para camas king size com fechamento em zíper",
-      category: "allergic-free"
-    },
-    {
-      id: 10,
-      name: "Allergic Free Casal com Zíper",
-      image: "/lovable-uploads/1746736692313_Allergic free casal ziper.jpg",
-      description: "Tamanho casal com fechamento em zíper",
-      category: "allergic-free"
-    },
-    {
-      id: 11,
-      name: "Allergic Free Branco com Zíper",
-      image: "/lovable-uploads/1746736690984_allergic free branco ziper.jpg",
-      description: "Versão branca com fechamento em zíper",
-      category: "allergic-free"
-    },
+
     {
       id: 12,
-      name: "Allergic Cov Brinde",
+      name: "Allergic Cover",
       image: "/lovable-uploads/1746736689942_allergiccov brinde.jpg",
       description: "Brinde exclusivo para nossos clientes",
       category: "allergic-cover"
