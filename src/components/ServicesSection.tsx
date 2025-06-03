@@ -25,7 +25,7 @@ const ServicesSection = () => {
   }, {
     icon: BarChart3,
     title: 'Qualidade Comprovada',
-    description: '21 anos de experiência no mercado, com produtos testados e aprovados por milhares de clientes.'
+    description: '24 anos de experiência no mercado, com produtos testados e aprovados por milhares de clientes.'
   }];
   return <section id="serviços" className="py-24 bg-gradient-to-b from-secondary/20 to-white">
       <div className="section-container">
