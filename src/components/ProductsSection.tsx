@@ -74,13 +74,7 @@ const ProductsSection = () => {
       description: "Proteção completa contra ácaros",
       category: "allergic-cover"
     },
-    {
-      id: 5,
-      name: "Capa Protetora Premium",
-      image: "/lovable-uploads/1746736707730__MG_7516.jpeg",
-      description: "Qualidade superior para sua proteção",
-      category: "allergic-free"
-    },
+
     {
       id: 6,
       name: "Matelassê Casal Impermeável",
@@ -88,13 +82,7 @@ const ProductsSection = () => {
       description: "Conforto e impermeabilidade para seu colchão",
       category: "protetor-matelasse"
     },
-    {
-      id: 7,
-      name: "Linha Institucional",
-      image: "/lovable-uploads/1746736704693_institucional.png",
-      description: "Soluções para hotéis e hospitais",
-      category: "all"
-    },
+
     {
       id: 8,
       name: "Produtos Disponíveis na Shopee",
