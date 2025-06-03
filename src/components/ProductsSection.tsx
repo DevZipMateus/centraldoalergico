@@ -61,10 +61,10 @@ const ProductsSection = () => {
     },
     {
       //id: 2,
-      name: "Travesseiro Antialérgico",
-      image: "/lovable-uploads/1746736710856_Travesseiro com a capa.png",
-      description: "Conforto e proteção para noites tranquilas",
-      category: "all"
+      //name: "Travesseiro Antialérgico",
+      //image: "/lovable-uploads/1746736710856_Travesseiro com a capa.png",
+      //description: "Conforto e proteção para noites tranquilas",
+      //category: "all"
     },
     {
       id: 3,
