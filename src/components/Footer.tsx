@@ -11,7 +11,7 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-bold mb-4">Central do Alérgico</h3>
             <p className="text-gray-300 mb-6">
-              Atuamos há 21 anos no mercado na fabricação de produtos especializados para o bem estar de pessoas alérgicas,
+              Atuamos há 24 anos no mercado na fabricação de produtos especializados para o bem estar de pessoas alérgicas,
               com atendimento personalizado e foco na qualidade.
             </p>
             <div className="flex space-x-4">
