@@ -1,8 +1,10 @@
 
-import { ChevronRight } from 'lucide-react';
+import { ChevronRight, ExternalLink } from 'lucide-react';
 import AnimatedSection from './AnimatedSection';
+
 const HeroSection = () => {
-  return <section id="início" className="relative min-h-screen flex items-start pt-24 md:pt-16 md:items-center bg-gradient-to-r from-blue-50 to-slate-50 overflow-hidden">
+  return (
+    <section id="início" className="relative min-h-screen flex items-start pt-24 md:pt-16 md:items-center bg-gradient-to-r from-blue-50 to-slate-50 overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute inset-y-0 right-0 w-1/2 bg-primary/5 skew-x-12 transform origin-bottom"></div>
@@ -31,6 +33,15 @@ const HeroSection = () => {
               </a>
               <a href="#produtos" className="btn-secondary">
                 Conheça Nossos Produtos
+              </a>
+              <a 
+                href="https://www.lojacentraldoalergico.com.br/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="btn-accent flex items-center gap-2"
+              >
+                Loja Virtual
+                <ExternalLink className="h-4 w-4" />
               </a>
             </div>
 
@@ -65,6 +76,8 @@ const HeroSection = () => {
       </div>
       
       <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-background to-transparent"></div>
-    </section>;
+    </section>
+  );
 };
+
 export default HeroSection;
