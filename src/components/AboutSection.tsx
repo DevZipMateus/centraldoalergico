@@ -1,7 +1,8 @@
+
 import { CheckCircle } from 'lucide-react';
 import AnimatedSection from './AnimatedSection';
 const AboutSection = () => {
-  const features = ['Produtos 100% antialérgicos', 'Materiais de alta qualidade', 'Atendimento personalizado', 'Entrega para todo Brasil', '21 anos de experiência', 'Suporte pós-venda'];
+  const features = ['Produtos 100% antialérgicos', 'Materiais de alta qualidade', 'Atendimento personalizado', 'Entrega para todo Brasil', '24 anos de experiência', 'Suporte pós-venda'];
   return <section id="sobre-nós" className="py-24 bg-white">
       <div className="section-container">
         <AnimatedSection>
@@ -27,9 +28,9 @@ const AboutSection = () => {
             <span className="inline-block text-sm font-semibold py-1 px-3 bg-primary/10 text-accent rounded-full">
               Nossa História
             </span>
-            <h3 className="text-3xl font-bold">21 anos de excelência</h3>
+            <h3 className="text-3xl font-bold">+2 Décadas de excelência</h3>
             <p className="text-gray-600">
-              A Central do Alérgico atua há 21 anos no mercado na fabricação de produtos especializados para 
+              A Central do Alérgico atua há 24 anos no mercado na fabricação de produtos especializados para 
               o bem estar de pessoas alérgicas. Somos uma empresa que tem a preocupação com os nossos clientes 
               de forma personalizada e que está sempre atenta com a qualidade dos nossos produtos.
             </p>

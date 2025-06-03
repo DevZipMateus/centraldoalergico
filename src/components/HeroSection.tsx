@@ -1,3 +1,4 @@
+
 import { ChevronRight } from 'lucide-react';
 import AnimatedSection from './AnimatedSection';
 const HeroSection = () => {
@@ -20,7 +21,7 @@ const HeroSection = () => {
               <span className="text-primary">Saúde e Conforto</span>
             </h1>
             <p className="text-lg text-gray-600 max-w-xl">
-              Há 21 anos no mercado, fabricando produtos especializados para o bem estar de pessoas alérgicas,
+              Há 24 anos no mercado, fabricando produtos especializados para o bem estar de pessoas alérgicas,
               com atendimento personalizado e foco na qualidade.
             </p>
             <div className="flex flex-wrap gap-4 pt-2">
@@ -35,12 +36,12 @@ const HeroSection = () => {
 
             <div className="pt-8 flex items-center gap-8">
               <div className="text-center">
-                <div className="text-3xl font-bold text-accent">21+</div>
-                <div className="text-sm text-gray-600">Anos de Experiência</div>
+                <div className="text-3xl font-bold text-accent">24+</div>
+                <div className="text-sm text-gray-600">Anos de Mercado</div>
               </div>
               <div className="h-12 w-px bg-gray-200"></div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-accent">1000+</div>
+                <div className="text-3xl font-bold text-accent">100000+</div>
                 <div className="text-sm text-gray-600">Clientes Atendidos</div>
               </div>
               <div className="h-12 w-px bg-gray-200"></div>
